@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Reorganized the README around upstream credit, citation, install, usage, manual asset downloads, development, license, and support.
+
 ## 0.1.0 — 2026-11-13
 
 - Extracted the author inference model, fusion layers and configuration.
