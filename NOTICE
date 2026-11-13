@@ -1,0 +1,12 @@
+TP-CLAP inference model code is derived from Mohan Li's TP-CLAP project,
+https://github.com/mohan-li/TP-CLAP at commit
+39455a4fe4710e27eedf53a5598a6ae6404d0382, licensed under Apache-2.0.
+Copyright 2026 Mohan Li and TP-CLAP contributors.
+
+The inference package, asset resolver, lifecycle and documentation include
+changes by openmirlab contributors, Copyright 2026 openmirlab.
+
+CED and BERT code/config/tokenizer are fetched separately from their pinned
+Hugging Face revisions. TP-CLAP author checkpoints are never included in this
+source repository or wheel. See docs/source-provenance.md and
+src/tpclap_infer/config/checkpoints.toml for exact sources and hashes.

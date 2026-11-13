@@ -1,0 +1,49 @@
+# Author checkpoints, exact model code/config and tokenizer revisions.
+[nsynth]
+repo_id = "mohanli/TP-CLAP"
+revision = "b14090f5210715958f5ab7056d3c47f5f61cb582"
+filename = "tp-clap_nsynth.pt"
+sha256 = "d4c2c30819d553dfd56cd61f8996aa875ef1bcd8e7509d5789be3bd08ea416f7"
+size = 876980901
+url = "https://huggingface.co/mohanli/TP-CLAP/resolve/b14090f5210715958f5ab7056d3c47f5f61cb582/tp-clap_nsynth.pt"
+license = "Apache-2.0 per author model card"
+source = "Mohan Li TP-CLAP NSynth checkpoint"
+updated = "2026-11-13"
+
+[mtt]
+repo_id = "mohanli/TP-CLAP"
+revision = "b14090f5210715958f5ab7056d3c47f5f61cb582"
+filename = "tp-clap_mtt.pt"
+sha256 = "8425de5eb3724ac309b4380c06fc8fe3404ea9cbd6661148903bb6d39a01fa13"
+size = 876980901
+url = "https://huggingface.co/mohanli/TP-CLAP/resolve/b14090f5210715958f5ab7056d3c47f5f61cb582/tp-clap_mtt.pt"
+license = "Apache-2.0 per author model card"
+source = "Mohan Li TP-CLAP MagnaTagATune checkpoint"
+updated = "2026-11-13"
+
+[ced]
+repo_id = "mispeech/ced-base"
+revision = "db3e14a8db4c21b56b165261c39649741a900e7f"
+license = "Apache-2.0 per author model card"
+source = "CED backbone config, feature extractor and model code only; weights from TP-CLAP checkpoint"
+updated = "2026-11-13"
+
+[ced.files]
+"config.json" = "ac55e3cecfd75f3cd2e1b1a22ad3f74b4b197655efd7e3a14dd5228293b32dfb"
+"configuration_ced.py" = "147ac3602c1b35c3309d68575e3f19eb22cc2afe088897397991613e68a82a64"
+"feature_extraction_ced.py" = "d2eff0a8cbc563196f8ccef4180d9e9299d643bfee087a545e97e9c4a9e64cb4"
+"modeling_ced.py" = "6f52feb2df14e585565851a96ae1c61c43fe5b3b075163565a56b04f93b9507e"
+"preprocessor_config.json" = "668fbf4f00f9e3915de04fc07a621434ef1746b933662840623a9701291ca55a"
+
+[bert]
+repo_id = "google-bert/bert-base-uncased"
+revision = "86b5e0934494bd15c9632b12f734a8a67f723594"
+license = "Apache-2.0 per author model card"
+source = "BERT config/tokenizer only; weights from TP-CLAP checkpoint"
+updated = "2026-11-13"
+
+[bert.files]
+"config.json" = "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+"tokenizer.json" = "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98"
+"tokenizer_config.json" = "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10"
+"vocab.txt" = "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"

@@ -1,0 +1,37 @@
+{
+  "source": "mohan-li/TP-CLAP 39455a4fe4710e27eedf53a5598a6ae6404d0382",
+  "checkpoint": "tp-clap_mtt.pt",
+  "checkpoint_sha256": "8425de5eb3724ac309b4380c06fc8fe3404ea9cbd6661148903bb6d39a01fa13",
+  "torch": "2.7.0+cu126",
+  "transformers": "4.57.6",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "threads": 4,
+  "audio": [
+    "mtt_tone.wav"
+  ],
+  "prompts": [
+    "What is the instrument playing the music?"
+  ],
+  "texts": [
+    "A bass guitar plays a low tone."
+  ],
+  "shapes": {
+    "plain": [
+      1,
+      1024
+    ],
+    "conditioned": [
+      1,
+      1024
+    ],
+    "text": [
+      1,
+      1024
+    ],
+    "score": [
+      1,
+      1
+    ]
+  }
+}
