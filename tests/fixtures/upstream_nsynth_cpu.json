@@ -1,0 +1,40 @@
+{
+  "source": "mohan-li/TP-CLAP 39455a4fe4710e27eedf53a5598a6ae6404d0382",
+  "checkpoint": "tp-clap_nsynth.pt",
+  "checkpoint_sha256": "d4c2c30819d553dfd56cd61f8996aa875ef1bcd8e7509d5789be3bd08ea416f7",
+  "torch": "2.7.0+cu126",
+  "transformers": "4.57.6",
+  "numpy": "2.5.3",
+  "device": "cpu",
+  "threads": 4,
+  "audio": [
+    "nsynth_tone_0.wav",
+    "nsynth_tone_1.wav"
+  ],
+  "prompts": [
+    "What is the instrument playing the music?",
+    "What is the instrument playing the music?"
+  ],
+  "texts": [
+    "An acoustic piano plays.",
+    "A bright electronic synthesizer plays."
+  ],
+  "shapes": {
+    "plain": [
+      2,
+      1024
+    ],
+    "conditioned": [
+      2,
+      1024
+    ],
+    "text": [
+      2,
+      1024
+    ],
+    "score": [
+      2,
+      2
+    ]
+  }
+}
