@@ -1,6 +1,6 @@
 # tpclap-infer maintainer guide
 
-Standalone Apache-2.0 inference-only TP-CLAP package. Scope: author audio/text/fusion model, CED frontend, BERT tokenizer, pinned checkpoint resolver, lifecycle and native embedding semantics. No training, datasets, evaluation CLI, bundled weights or Tactus-specific code. Upstream source `mohan-li/TP-CLAP` commit `39455a4fe4710e27eedf53a5598a6ae6404d0382`; copied model files are under `src/tpclap_infer/_impl/`. Changes to those files must preserve source attribution and rerun author-output comparisons.
+Standalone Apache-2.0 inference-only TP-CLAP package. The model and research are by Mohan Li, Rama Doddipatla, and Philip C. Woodland; the source is `mohan-li/TP-CLAP` and the author checkpoint host is `mohanli/TP-CLAP` on Hugging Face. Scope: author audio/text/fusion model, pinned CED frontend, BERT tokenizer, checkpoint resolver, lifecycle and native embedding semantics. No training, datasets, evaluation CLI, bundled weights or Tactus-specific code. Upstream source commit `39455a4fe4710e27eedf53a5598a6ae6404d0382`; copied TP-CLAP model files are under `src/tpclap_infer/_impl/`. Changes to those files must preserve source attribution and rerun author-output comparisons.
 
 Profiles: `nsynth` 4 sec and `mtt` 10 sec, mono 16 kHz, exact length. Each has its own embedding space. Outputs are [N,1024] L2-normalized float arrays. Conditioned queries compare with plain audio candidates. Cosine scores are uncalibrated. The caller owns long-audio windows and any index. Do not claim production quality from fixture parity.
 
@@ -16,3 +16,5 @@ python -m build
 ```
 
 The `model` tests download/check ~837 MiB per profile unless assets are already cached. Exact float parity only applies to the fixture's recorded CPU runtime. Keep README and CHANGELOG current with public API and install changes. See `docs/source-provenance.md` for the original-to-package file map.
+
+Public GitHub installation is `pip install 'tpclap-infer[audio] @ git+https://github.com/openmirlab/tpclap-infer.git'`; no PyPI release or Tactus integration exists yet. Load-bearing source files carry title/rationale/`Reads:` navigation headers; keep them accurate when editing. The README credits and cites the upstream work before describing package features.
