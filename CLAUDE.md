@@ -8,6 +8,11 @@ Checkpoint manifests live in `src/tpclap_infer/config/checkpoints.toml`; all fil
 
 Verification:
 
+`.github/workflows/ci.yml` gates Python 3.10–3.15 offline tests and lint, plus
+a Python 3.12 clean installed-wheel smoke. It excludes the `model` marker from
+default CI because each profile needs an approximately 837 MiB author asset.
+Run the marked tests separately to verify author-output parity before release.
+
 ```bash
 python -m pytest
 python -m pytest -m model

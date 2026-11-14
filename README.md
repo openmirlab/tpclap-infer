@@ -98,6 +98,11 @@ The wheel never includes checkpoint weights, training loops, datasets, or evalua
 
 ## Development
 
+GitHub CI runs offline tests (`pytest -m 'not model'`) and lint on Python
+3.10–3.15, then builds a wheel from the sdist and checks its installed public
+API in a clean Python 3.12 environment. The author-output tests for both
+profiles remain a separate checkpoint-backed verification step.
+
 ```bash
 python -m pytest
 python -m pytest -m model
